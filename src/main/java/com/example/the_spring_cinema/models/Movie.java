@@ -2,7 +2,7 @@ package com.example.the_spring_cinema.models;
 
 import jakarta.persistence.*;
 
-@Entity(name = "movie")
+@Entity(name = "movies")
 public class Movie {
 
     @Id
