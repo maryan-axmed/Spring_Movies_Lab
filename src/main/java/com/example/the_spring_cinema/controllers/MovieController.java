@@ -40,7 +40,7 @@ public class MovieController {
         }
     }
 
-//    POST request for /movies/{id}
+//    POST request for /movies
     @PostMapping
     public ResponseEntity<Movie> newMovie(){
         Movie movie = movieService.newMovie();

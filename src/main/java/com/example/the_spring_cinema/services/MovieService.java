@@ -40,7 +40,7 @@ public class MovieService {
 //    3. we want to Post/create a new movie
 //    then we want to add to our list of movies
     public Movie newMovie(){
-        movie = new Movie("Iron Man", "12A");
+        movie = new Movie("Batman", "12A");
         return movie;
     }
 

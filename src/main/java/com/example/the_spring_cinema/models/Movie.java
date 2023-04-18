@@ -18,7 +18,6 @@ public class Movie {
     public Movie(String title, String rating){
         this.title = title;
         this.rating = rating;
-        this.duration = 0;
     }
 
 //    GETTERS AND SETTERS:
