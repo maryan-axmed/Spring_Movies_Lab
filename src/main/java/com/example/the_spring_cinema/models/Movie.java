@@ -1,17 +1,24 @@
 package com.example.the_spring_cinema.models;
 
+import jakarta.persistence.*;
+
+@Entity(name = "movie")
 public class Movie {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(name = "title")
     private String title;
+    @Column(name = "rating")
     private String rating;
+    @Column(name = "duration")
     private int duration;
 
-    public Movie(int id, String title, String rating, int duration){
-        this.id = id;
+    public Movie(String title, String rating){
         this.title = title;
         this.rating = rating;
-        this.duration = duration;
+        this.duration = 0;
     }
 
 //    GETTERS AND SETTERS:
